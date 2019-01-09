@@ -9,9 +9,9 @@ app = Flask(__name__)   # 웹서버 초기화
 f = ''                  # 사진 및 동영상 파일 이름 기억을 위한 변수
 cam = ''                # 카메라 객체를 위한 변수
 html = ''               # 촬영목록 html 태그 저장을 위한 변수
-html_still = '<a href="./still"><button>still</button></a> '    # 사진촬영 버튼 html 태그
-html_record = '<a href="./record"><button>record</button></a> ' # 동영상녹화 버튼 html 태그
-html_stop = '<a href="./stop"><button>stop</button></a> '       # 동영상정지 버튼 html 태그
+html_still = '<a href="./still"><button>사진 촬영</button></a> '    # 사진촬영 버튼 html 태그
+html_record = '<a href="./record"><button>녹화 시작</button></a> '  # 동영상녹화 버튼 html 태그
+html_stop = '<a href="./stop"><button>녹화 종료</button></a> '      # 동영상정지 버튼 html 태그
 
 @app.route('/')         # 웹브라우저가 http://주소/를 요청할 때 실행할 함수
 def home():
