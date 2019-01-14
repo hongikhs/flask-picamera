@@ -12,6 +12,7 @@ from flask import Flask, Response   # 웹서버 구현을 위한 모듈
 app = Flask(__name__)               # 웹서버 초기화
 f = ''                              # 사진 및 동영상 파일 이름 기억을 위한 변수
 cam = picamera.PiCamera()           # 카메라 사용 준비
+cam.resolution = (320, 240)         # 카메라 해상도 설정
 html_list = ''                                                          # 촬영목록 html 태그 저장을 위한 변수
 html_still = '<a href="./still"><button>사진 촬영</button></a> '        # 사진 촬영 버튼 html 태그
 html_record = '<a href="./record"><button>녹화 시작</button></a> '      # 녹화 시작 버튼 html 태그
