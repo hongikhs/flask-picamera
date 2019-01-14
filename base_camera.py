@@ -8,7 +8,7 @@ except ImportError:
     except ImportError:
         from _thread import get_ident
 
-
+        
 class CameraEvent(object):
     """An Event-like class that signals all active clients when a new frame is
     available.
