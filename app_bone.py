@@ -1,3 +1,4 @@
+import picamera                     # 카메라 사용을 위한 모듈
 import io, time                     # 웹스트리밍을 위한 모듈
 from base_camera import BaseCamera  # 웹스트리밍을 위한 모듈
 from flask import Flask, Response   # 웹서버 구현을 위한 모듈
