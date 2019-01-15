@@ -15,14 +15,15 @@ def home():
 
 @app.route('/still')                # 웹브라우저가 http://주소/still을 요청할 때 실행할 함수
 def still():
-
+    return html_stream
 
 @app.route('/record')               # 웹브라우저가 http://주소/record를 요청할 때 실행할 함수
 def record():
-
+    return html_stream
 
 @app.route('/stop')                 # 웹브라우저가 http://주소/stop을 요청할 때 실행할 함수
 def stop():
+    return html_stream
 
 # 웹스트리밍을 위한 코드
 class Camera(BaseCamera):
