@@ -8,11 +8,11 @@ app = Flask(__name__)               # 웹서버 초기화
 cam = picamera.PiCamera()           # 카메라 사용 준비
 cam.resolution = (320, 240)         # 카메라 해상도 설정
 
-html_stream = '<h1>드론 원격 카메라</h1><img src="/video_feed"><br><br>' # 제목과 스트리밍 html 태그
+t_stream = '<h1>드론 원격 카메라</h1><img src="/video_feed"><br><br>' # 제목과 스트리밍 html 태그
 
 @app.route('/')                     # 웹브라우저가 http://주소/를 요청할 때 실행할 함수
 def home():
-    return html_stream
+    return t_stream
 
 ################################################################################################
 # 웹스트리밍을 위한 코드
